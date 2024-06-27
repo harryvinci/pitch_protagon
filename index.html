@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+         <!-- Google Tag Manager -->
+    <script>
+        (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+        })(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-NTDSMZM':true});
+        </script>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NTDSMZM');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "dydodrqnxx");
+    </script>
+
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+    <title>Imersão Million 2024 | Wendell Carvalho</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container header-container">
+            <p id="cronometro"></p>
+            <a href="#oferta" id="botao-faixa-fixa">Garantir minha vaga</a>
+
+            <script id="ativador-cronometro">
+                // Função para iniciar o temporizador
+                function startTimer() {
+                    // Verifica se há um cookie chamado "temporizador"
+                    if (document.cookie.indexOf("temporizador=") == -1) {
+                        // Se não houver, cria um novo cookie com a data e hora atuais
+                        var currentDate = new Date();
+                        currentDate.setHours(currentDate.getHours() + 24); // Adiciona 24 horas
+                        var expires = "expires=" + currentDate.toUTCString();
+                        document.cookie = "temporizador=" + currentDate.getTime() + "; " + expires;
+                    }
+            
+                    // Inicializa o temporizador
+                    updateTimer();
+                }
+            
+                // Função para atualizar o temporizador
+                function updateTimer() {
+                    var timerElement = document.getElementById("cronometro");
+                    var expirationTime = new Date(parseInt(getCookie("temporizador")));
+                    var now = new Date();
+                    var timeDifference = expirationTime - now;
+            
+                    // Verifica se o tempo já expirou
+                    if (timeDifference <= 0) {
+                        timerElement.innerHTML = "TEMPO ESGOTADO!";
+                        return;
+                    }
+            
+                    // Converte o tempo restante em horas, minutos, segundos
+                    var hours = Math.floor(timeDifference / 3600000);
+                    var minutes = Math.floor((timeDifference % 3600000) / 60000);
+                    var seconds = Math.floor((timeDifference % 60000) / 1000);
+                        
+                    //adiciona o zero quando o número for menor que 10
+                    if(hours<10){
+                        hours = "0" + hours;
+                    }
+                    if(minutes<10){
+                        minutes = "0" + minutes;
+                    }
+                    if(seconds<10){
+                        seconds = "0" + seconds;
+                    }
+            
+                    // Exibe o temporizador
+                    timerElement.innerHTML = hours + " <span>horas</span> " + minutes + " <span>min</span> " + seconds + " <span>seg</span>";
+                        
+                    // Atualiza o temporizador a cada segundo
+                    setTimeout(updateTimer, 1000);
+                }
+            
+                // Função para obter o valor de um cookie
+                function getCookie(name) {
+                    var value = "; " + document.cookie;
+                    var parts = value.split("; " + name + "=");
+                    if (parts.length == 2) return parts.pop().split(";").shift();
+                }
+            
+                startTimer(); // Inicia o temporizador quando a página é carregada
+            </script>
+
+        </div>
+        
+    </header>
+
+    <section class="faixa-animada-scroll">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Desconto exclusivo para alunos Protagon São Paulo</span>
+                <span>Desconto exclusivo para alunos Protagon São Paulo</span><span>Desconto exclusivo para alunos Protagon São Paulo</span><span>Desconto exclusivo para alunos Protagon São Paulo</span><span>Desconto exclusivo para alunos Protagon São Paulo</span><span>Desconto exclusivo para alunos Protagon São Paulo</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="hero">
+        <div class="hero-container container">
+            
+            <div class="local-data">
+                <!-- estilo desse elemento está no style.css -->
+                <div>
+                    <img  loading="lazy" src="/image/calendar.svg" alt="" class="icon-hero">
+                    <p>06, 07 e 08 de dezembro</p>
+                </div>
+                <div>
+                    <img  loading="lazy" src="/image/geo.svg" alt="" class="icon-hero">
+                    <p>Transamerica Expo Center - SP</p>
+                </div>
+        
+            </div>
+            <div class="headline">
+                <h1>A MAIOR IMERSÃO DO BRASIL SOBRE DINHEIRO, MENTALIDADE, E INTERNET</h1>
+                <h2><strong>O lugar certo</strong> para acelerar o crescimento - ou nascimento - do seu negócio.</h2>
+            </div>
+            <a href="#oferta" class="botao-geral">Quero meu ingresso</a>
+        </div>
+    </section>
+
+    <section id="ingresso-bogo">
+        <div class="container bogo-container">
+            <div>
+                <h3 class="header-gradient">Na compra de qualquer ingresso, você ganha outro no mesmo setro nas categorias Executivo, VIP e Diamond</h3>
+                <p>
+                    Leve a(o) companheira(o), sócia(o) ou alguém que também deseja resultados financeiros extraordinários.
+                </p>
+            </div>
+            <img  loading="lazy" src="/image/ingresso.webp" alt="ingressos duplos">
+        </div>
+    </section>
+
+    <section id="oferta">
+        <div class="container oferta-container">
+            <h3 class="header-gradient">ESCOLHA A MELHOR EXPERIÊNCIA PARA VOCÊ</h3>
+            <div class="grupo-categorias">
+                <div class="categoria" id="executivo">
+                    <div class="header-categoria">
+                        <h4>executivo</h4>
+                        <p>compre 1 e ganhe outro</p>
+                    </div>
+                    <div class="descricao-categoria">
+                        <h5>Lote 1</h5>
+
+                        <ul class="beneficios">
+                            <li>Acesso aos 3 dias de evento</li>
+                            <li>Kit de Aluno Executivo</li>
+                            <li>2 Ingressos pelo preço de 1</li>
+                        </ul>
+
+                        <div class="detalhe-oferta">
+                            <p>De <s>R$ 2.597,00</s> por</p>
+                            <h3>12x de</h3>
+                            <h2>R$ 126,36</h2>
+                            <p>Ou R$ 1.297,00 à vista</p>    
+                        </div>
+
+                        <a href="checkout.html" class="botao-geral">Comprar agora</a>
+
+                        <img  loading="lazy" src="/image/bandeiras_cartao.webp" alt="formas de pagamento">
+                    </div>
+                    
+                </div>
+
+                <div class="categoria" id="vip">
+                    <div class="header-categoria">
+                        <h4>VIP</h4>
+                        <p>compre 1 e ganhe outro</p>
+                    </div>
+                    <div class="descricao-categoria">
+                        <h5>Lote 1</h5>
+
+                        <ul class="beneficios">
+                            <li>Todos os benefícios da categoria Executivo</li>
+                            <li>Todos os benefícios da categoria Executivo</li>
+                            <li>Todos os benefícios da categoria Executivo</li>
+                            <li>Cadeiras marcadas por categoria para garantir os melhores lugares</li>
+                            <li>2 Ingressos pelo preço de 1</li>
+                        </ul>
+
+                        <div class="detalhe-oferta">
+                            <p>De <s>R$ 3.997,00</s> por</p>
+                            <h3>12x de</h3>
+                            <h2>R$ 194,56</h2>
+                            <p>Ou R$ 1.997,00 à vista</p>  
+                        </div>
+
+                        <a href="checkout.html" class="botao-geral">Comprar agora</a>
+
+                        <img  loading="lazy" src="/image/bandeiras_cartao.webp" alt="formas de pagamento">
+                    </div>
+                    
+                </div>
+                
+                <div class="categoria" id="diamond">
+                    <div class="header-categoria">
+                        <h4>Diamond</h4>
+                        <p>compre 1 e ganhe outro</p>
+                    </div>
+                    <div class="descricao-categoria">
+                        <h5>Lote 1</h5>
+
+                        <ul class="beneficios">
+                            <li>Todos os benefícios da categoria VIP</li>
+                            <li>Espaço reservado para almoço</li>
+                            <li>Pré-evento PRESENCIAL com Wendell Carvalho e Karina Peloi</li>
+                            <li>Área exclusiva com estrategistas e time do Wendell Carvalho durante o evento</li>
+                            <li>Lounge de networking exclusivo</li>
+                            <li>Hotseat - roda de negócios com presença de estrategistas Virtus (grupo de empresas do Wendell Carvalho e Karina Peloi)</li>
+                            <li>Coquetel exclusivo pré-evento</li>
+                            <li>Água, café e frutas disponíveis durante os 3 dias de evento</li>
+                            <li>Cadeiras mais próximas do palco</li>
+                            <li>Acesso ao Diamond Club</li>
+                            <li>2 Ingressos pelo preço de 1</li>
+                        </ul>
+
+                        <div class="detalhe-oferta">
+                            <p>De <s>R$ 9.997,00</s> por</p>
+                            <h3>12x de</h3>
+                            <h2>R$ 486,84</h2>
+                            <p>Ou R$ 4.997,00 à vista</p>  
+                        </div>
+
+                        <a href="checkout.html" class="botao-geral">Comprar agora</a>
+
+                        <img  loading="lazy" src="/image/bandeiras_cartao.webp" alt="formas de pagamento">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="diamond-club">
+        <div class="container diamond-club-container">
+            <img  loading="lazy" src="/image/diamond_club.svg" alt="Logo Diamond Club">
+            <h3>O MILLION COMEÇA AGORA PARA QUEM GARANTIR SUA VAGA NO SETOR DIAMOND: <span>É O DIAMOND CLUB</span></h3>
+
+            <div class="detalhes-diamond-club">
+                <p>10 encontros com o Wendell e mais mentores sobre Negócios, Mentalidade, Dinheiro e Internet</p>
+                <img  loading="lazy" src="/image/plus.svg" alt="Mais">
+                <p>Encontros Presenciais* durante o ano para expandirem ainda mais o seu Networking<br><span>*Promovidos pelos próprios mentorados</span></p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="palestrantes">
+        <div class="container palestrantes-container">
+
+            <h3 class="header-gradient">ELES VÃO TE ENTREGAR O PLANO PARA VOCÊ CONQUISTAR RIQUEZA, SIGNIFICADO E LIBERDADE</h3>
+
+            <div class="todos-palestrantes">
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/wendell.webp" alt="Wendell Carvalho">
+                    <h5>WENDELL CARVALHO</h5>
+                    <p>CEO do Grupo Virtus, o único infoprodutor NO MUNDO, até o momento, a atingir o marco de R$250 milhões em comissões na Hotmart.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/karina.webp" alt="Karina Peloi">
+                    <h5>KARINA PELOI</h5>
+                    <p>Co-fundadora do Grupo Virtus, grupo de empresas com mais de R$100 milhões de faturamento anual.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/ladeira.webp" alt="Leandro Ladeira">
+                    <h5>LEANDRO LADEIRA</h5>
+                    <p>Idealizador do método Venda Todo Santo Dia, Leandro Ladeira vai te mostrar como uma parceria de negócios promissora lhe rendeu mais de 150 milhões de reais vendendo todo santo dia sem precisar se matar de trabalhar.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/micha.webp" alt="Micha Menezes">
+                    <h5>MICHA MENEZES</h5>
+                    <p>CPublicitário, estrategista digital e sócio de uma das maiores agências de Marketing Digital do Brasil, ele vai revelar como fazer muito dinheiro com a internet sem precisar se tornar um influencer digital.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/marcus-2.webp" alt="Marcus Marques">
+                    <h5>MARCUS MARQUES</h5>
+                    <p>CEO do Grupo Acelerador com mais de R$100 milhões de faturamento anual.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/galamba.webp" alt="Guto Galamba">
+                    <h5>GUTO GALAMBA</h5>
+                    <p>Educador físico, especialista em psicologia positiva e em ciência do bem estar, ele vai mostrar no palco da Imersão Million como o ambiente tem o poder de elevar sua performance.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/guilherme.webp" alt="Guilherme Freire">
+                    <h5>GUILHERME FREIRE</h5>
+                    <p>Criador da plataforma de streaming do Brasil Paralelo, BPSelect, professor e mestre em filosofia. Idealizador e professor da formação em filosofia, liderança e virtudes para empresários, Em Busca da Verdade. Atualmente, é mentor de mais de 500 empresários que compõe as famílias mais ricas do Brasil.</p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/em_breve.webp" alt="Revelação em breve">
+                    <h5>REVELAÇÃO EM BREVE</h5>
+                    <p></p>
+                </div>
+                <div class="palestrante">
+                    <img  loading="lazy" src="/image/em_breve.webp" alt="Revelação em breve">
+                    <h5>REVELAÇÃO EM BREVE</h5>
+                    <p></p>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </section>
+
+    <section id="aviso">
+        <!-- estilo dessa sessão está no footer.css -->
+        <div class="container aviso-container">
+            <p>Os valores informados são referentes APENAS aos dias da Imersão Million, não estando inclusos gastos com transporte e hospedagem.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            <a href="https://imersaomillion.com.br/politica-de-privacidade/" target="_blank">Política de privacidade</a> | <a href="https://imersaomillion.com.br/termos-de-uso-e-servico/" target="_blank">Termos de uso</a> | <a href="https://imersaomillion.com.br/termos-de-uso-e-servico/" target="_blank">Aviso legal</a> | <a href="https://imersaomillion.com.br/regulamento/" target="_blank">Regulamento</a>
+        </p>
+        <p>COPYRIGHT © WENDELL CARVALHO - KAIROS TREINAMENTOS - 2024</p>
+    </footer>
+    
+
+    <!-- script UTM/SCK -->
+    <script>
+        (function () {
+            var utmParamQueryString = new URLSearchParams(window.location.search);
+            if (utmParamQueryString.toString()) {
+                var currentHost = window.location.host; 
+                var navLinks = document.querySelectorAll('a');
+                navLinks.forEach(function (item) {
+                    var linkHost = new URL(item.href).host;
+                    if (linkHost !== currentHost) { 
+                        var separator = item.href.indexOf('?') !== -1 ? '&' : '?';
+                        item.href += separator + utmParamQueryString.toString();
+                    }
+                });
+            }
+        })();
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTDSMZM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+</body>
+</html>

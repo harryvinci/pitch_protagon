@@ -1,0 +1,28 @@
+footer{
+    background: var(--primary-color-03);
+    color: #b1b1b1;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+footer a{
+    text-decoration: none;
+    color: #b1b1b1;
+}
+/* estilo da sessão de aviso */
+#aviso{
+    background: var(--gold-gradient);
+    padding: 2rem 0;
+}
+.aviso-container{
+    justify-content: center;
+}
+.aviso-container p{
+    text-align: center;
+    font-weight: 700;
+    max-width: 60%;
+}

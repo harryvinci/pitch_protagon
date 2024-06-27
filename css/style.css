@@ -1,0 +1,102 @@
+@import url(/css/root.css);
+@import url(/css/hero.css);
+@import url(/css/header.css);
+@import url(/css/faixa-scroll.css);
+@import url(/css/footer.css);
+@import url(/css/sessao-bogo.css);
+@import url(/css/oferta.css);
+@import url(/css/diamond-club.css);
+@import url(/css/palestrantes.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+    line-height: 1.4em;
+    scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+
+h3{
+  font-family: var(--font-headers);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.header-gradient{
+  background: linear-gradient(180deg, #F9D364 0%, #CE9200 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botao-geral{
+    display: inline-block;
+    padding: 24px 48px;
+    background: var(--highlight-color-01);
+    border-radius: var(--box-border-radius);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--secondary-color-03);
+    box-shadow: 0px 8px 16px 0px rgba(0, 255, 133, 0.20);
+    
+    /*efeito dos botões*/
+    animation: pisca 1.5s infinite;
+    box-shadow: 0px 0px 21px -6px var(--primary-color-01); /*mudar a cor aqui*/
+}
+@keyframes pisca {
+  70% {
+    box-shadow: 0 0 0 25px rgb(0,0,0,0);
+
+  }
+    100% {
+    box-shadow: 0 0 0 0 rgb(0,0,0,0);
+  }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.local-data{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.local-data div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width:1220px){
+  .container{
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width:780px){
+  .local-data{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .container{
+    margin: 0;
+  }
+}
+@media screen and (max-width:400px) {
+  .botao-geral{
+    padding: 16px 32px;
+  }
+}

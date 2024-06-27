@@ -1,0 +1,32 @@
+.faixa-animada-scroll{
+    background: var(--primary-color-03);
+    color: #fff;
+    padding: 0.5rem 0;
+}
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.marquee-content{
+    display: flex;
+    align-content: center;
+}
+.marquee-content span{
+      margin-right: 200px;
+}
+  
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;  /* Move o conteúdo para fora da tela inicialmente */
+    animation: marqueeAnimation 50s linear infinite; /* 15 segundos de duração, ajuste conforme necessário */
+}  
+  
+@keyframes marqueeAnimation {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+}

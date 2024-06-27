@@ -1,0 +1,43 @@
+header{
+    background: var(--gold-gradient);
+    padding: 1rem 0;
+}
+.header-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#botao-faixa-fixa{
+    display: inline-block;
+    padding: 16px 32px;
+    background: var(--primary-color-03);
+    border-radius: var(--box-border-radius);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+#cronometro{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+#cronometro span{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width:790px) {
+        header{
+            padding: 1rem 0.5rem;
+        }
+      .header-container{
+        justify-content: center;
+        gap: 1rem;
+      } 
+      #cronometro{
+        font-size: 2rem;
+    }
+}

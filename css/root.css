@@ -1,0 +1,23 @@
+:root{
+    --font-headers: garamond, serif;
+    --font-body: "Montserrat", sans-serif;
+
+    --primary-color-01: #DCBA55;
+    --primary-color-02: #0D182C;
+    --primary-color-03: #010205;
+
+    --secondary-color-01: #CE9200;
+    --secondary-color-02: #030811;
+    --secondary-color-03: #001C06;
+
+    --warning-color-01: #FF5E5E;
+
+    --highlight-color-01: #00FF85;
+
+    --bronze-gradient: linear-gradient(90deg, #F9AC64 0%, #CE6300 100%);
+    --gold-gradient: linear-gradient(90deg, #F9D364 0%, #CE9200 100%);
+    --diamond-gradient: linear-gradient(90deg, #EBEBEB 0%, #929292 100%);
+
+    --box-border-radius: 8px;
+    --box-border-style: 1px solid #fff;
+}

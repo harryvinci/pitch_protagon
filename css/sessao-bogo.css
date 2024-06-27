@@ -1,0 +1,28 @@
+.bogo-container{
+    flex-direction: row;
+    padding: 6rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+#ingresso-bogo{
+    background: var(--primary-color-03);
+    color: #fff;
+}
+#ingresso-bogo img{
+    max-width: 50%;
+}
+@media screen and (max-width:780px){
+    .bogo-container{
+        flex-direction: column-reverse;
+        padding: 3.5rem 2rem;
+        gap: 3rem;
+    }
+    #ingresso-bogo img{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:450px){
+  .bogo-container h3{
+    font-size: 1.3rem;
+  }
+}
