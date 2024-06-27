@@ -1,1 +1,1 @@
-#Baixar todos os arquivos antes de rodar o "index.html"
+Baixar todos os arquivos antes de rodar o "index.html"
